@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="content">
+      <AppMenu />
       <Nuxt />
     </div>
     <!-- sticky footer goes here -->
@@ -8,8 +9,9 @@
 </template>
 
 <script>
+import AppMenu from "../components/AppMenu.vue";
 export default {
-  components: {},
+  components: { AppMenu },
 };
 </script>
 

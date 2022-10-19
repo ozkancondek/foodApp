@@ -1,11 +1,23 @@
 <template>
-  <div>
-    <h1>Welcome to Nuxt</h1>
-  </div>
+  <main class="container">
+    <AppHeader />
+    <AppRestaurantInfo />
+    <AppFooter />
+  </main>
 </template>
 
 <script>
+import AppHeader from "../components/AppHeader.vue";
+import AppRestaurantInfo from "../components/AppRestaurantInfo.vue";
+import AppFooter from "../components/AppFooter.vue";
+
 export default {
-  name: "IndexPage",
+  components: {
+    AppHeader,
+    AppRestaurantInfo,
+    AppFooter,
+  },
 };
 </script>
+
+<style></style>

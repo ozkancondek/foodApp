@@ -90,7 +90,7 @@ button:focus {
 .ghost {
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
-  background: white;
+  background: rgb(255, 255, 255);
   border: 1px solid #555;
   color: black;
 }
@@ -320,14 +320,14 @@ section.restaurantinfo {
 
 }
 
-section.restaurantinfo.items {
+ .items {
   height: 250px;
   border-radius: 5px;
   background-size: cover;
   position: relative;
   box-shadow: 2px 6px 6px 0 rgb(215, 215, 215);
 }
-section.restaurantinfo.iteminfo {
+ .iteminfo {
   background: white;
   width: 100%;
   padding: 15px;
