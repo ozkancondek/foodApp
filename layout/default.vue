@@ -8,12 +8,8 @@
 </template>
 
 <script>
-import AppMenu from "@/components/AppMenu.vue";
-
 export default {
-  components: {
-    AppMenu,
-  },
+  components: {},
 };
 </script>
 
