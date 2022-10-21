@@ -13,7 +13,7 @@
       <div class="quantity">
         <input type="number" min="1" v-model="count" />
         <button class="primary" @click="addToCart">
-          Add to Cart - ${{ "combinedPrice" }}
+          Add to Cart - ${{ combinedPrice }}
         </button>
       </div>
 
