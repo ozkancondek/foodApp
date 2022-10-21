@@ -107,6 +107,7 @@ export default {
       };
       this.cartSubmitted = true;
       this.$store.commit("addToCart", formOutput);
+      this.$store.commit("updatePCount", parseInt(this.count));
     },
   },
   components: { AppToast },

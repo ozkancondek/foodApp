@@ -3,15 +3,23 @@ import { v4 as uuid4 } from "uuid";
 export const state = () => ({
   fooddata: [],
   cart: [],
+  pCount: 0,
 });
 
-// export const getters = {
-//   getterValue: state => {
-//     return state.value
-//   }
-// }
+export const getters = {
+  totalPrice: (state) => {
+    if (!state.cart.length) return 0;
+    return state.cart.reduce((ac, next) => ac + +next.combinedPrice, 0);
+  },
+  productCount: (state) => {
+    return state.pCount;
+  },
+};
 
 export const mutations = {
+  updatePCount: (state, num) => {
+    state.pCount += num;
+  },
   updateFoodData: (state, data) => {
     state.fooddata = data;
   },

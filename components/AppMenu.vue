@@ -8,10 +8,21 @@
         <nuxt-link exact to="/restaurants">Restaurants</nuxt-link>
       </li>
     </ul>
-    <nuxt-link to="/cart">cart</nuxt-link>
+    <nuxt-link to="/cart"
+      >cart <sup>{{ productCount }}</sup>
+    </nuxt-link>
   </nav>
 </template>
 
-<script></script>
+<script>
+import { computed } from "vue";
+import { mapGetters } from "vuex";
+
+export default {
+  computed: {
+    ...mapGetters(["productCount"]),
+  },
+};
+</script>
 
 <style lang="scss" scoped></style>
